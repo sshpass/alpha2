@@ -2,7 +2,7 @@
 
 # alpha2 v1.0
 # written by Marc Carlson June 18, 2022
-# bash parallel http bruteforcer. Tries all possible alphanumeric combinations based on the number of characters.
+# bash parallel htpasswd bruteforcer. Tries all possible alphanumeric combinations based on the number of characters.
 # also has an option to use a password file instead.
 # this is free software. free to use, free to redistribute. Do whatever you like with it.
 # if you want to add support for uppercase letters, add {A..Z} to the character set.
