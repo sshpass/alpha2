@@ -48,7 +48,7 @@ version() {
 printf "alpha2 version 1.0 parallel http login hacker\n"
 }
 
-if [[ $test == "1" ]]; then permute $1 && exit; fi
+if [[ $permutate == "1" ]]; then permute $1 && exit; fi
 
 # Credit to pskocik for permutation function based on a post at stackexchange -> https://unix.stackexchange.com/users/23692/pskocik
 
