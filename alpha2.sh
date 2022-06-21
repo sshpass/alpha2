@@ -69,7 +69,7 @@ else if ($1 =="403") { print "Exit with code 403"; exit}}'
 
 get_args $@
 if [[ $permutate == 1 ]]; then permute $2 && exit; fi
-if [ -z $characters ]; then
+if [ -z $characters ] && [ $wordlist ]; then
 parallel -j $threads -q curl -s -o /dev/null -w '%{http_code} {}\n' $proxy $ip -u $user:{} :::: $wordlist |\
 awk '{if($1 == "200") {print "Found Password: " $2; exit} else if ($1 == "000") { print "Exit with code 000"; exit}\
 else if ($1 =="403") { print "Exit with code 403"; exit}}'
